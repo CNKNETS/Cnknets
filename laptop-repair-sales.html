@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CnKneTs | Laptop Sales & Repairs</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;
+  background:#070b11;
+  color:#fff;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+
+section{
+  padding:80px 8%;
+}
+.hero{
+  min-height:70vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:120px 8%;
+  background:
+    linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.80)),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=90') center/cover no-repeat;
+}
+.hero h1{
+  font-size:clamp(2.2rem,5vw,4.5rem);
+  margin-bottom:16px;
+  line-height:1.05;
+  text-shadow:0 8px 24px rgba(0,0,0,.45);
+}
+.hero p{
+  max-width:700px;
+  margin:0 auto;
+  color:#d7deea;
+  font-size:1.05rem;
+}
+.section-title{
+  text-align:center;
+  font-size:clamp(2rem,4vw,3rem);
+  margin-bottom:18px;
+}
+.section-text{
+  text-align:center;
+  color:#94a3b8;
+  max-width:800px;
+  margin:0 auto 40px;
+}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:18px;
+}
+.gallery img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.08);
+  transition:transform .25s ease, filter .25s ease;
+}
+.gallery img:hover{
+  transform:translateY(-4px);
+  filter:brightness(1.04);
+}
+.contact-box{
+  max-width:900px;
+  margin:0 auto;
+  background:#111723;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:24px;
+  padding:30px;
+  text-align:center;
+}
+.contact-box p{
+  color:#cbd5e1;
+  margin-bottom:18px;
+}
+.contact-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  justify-content:center;
+  margin-top:18px;
+}
+.contact-links a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:14px 20px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  min-height:48px;
+}
+.btn-primary{
+  background:linear-gradient(135deg,#67fbff,#2f7bff);
+  color:#051018;
+}
+.btn-secondary{
+  background:rgba(255,255,255,.06);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.08);
+}
+@media (max-width:768px){
+  section{padding:60px 5%}
+  .hero{
+    min-height:62vh;
+    padding:120px 5% 70px;
+    background:
+      linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.84)),
+      url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80') center top/cover no-repeat;
+  }
+  .gallery{
+    grid-template-columns:1fr;
+  }
+  .gallery img{
+    height:220px;
+  }
+  .contact-links a{
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div>
+    <h1>Welcome to CnKneTs Laptop Sales & Repairs</h1>
+    <p>Professional laptop sales, hardware repairs, upgrades, diagnostics, and reliable support for homes, offices, and businesses.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Our Work Gallery</h2>
+  <p class="section-text">A few examples of our laptop repair work, upgrades, and sales setup.</p>
+
+  <div class="gallery">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=90" alt="Laptop repair work 1">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1000&q=90" alt="Laptop repair work 2">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1504707748692-419802cf939d?auto=format&fit=crop&w=1000&q=90" alt="Laptop repair work 3">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1000&q=90" alt="Laptop repair work 4">
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Contact / Book Now</h2>
+  <div class="contact-box">
+    <p>Need a laptop repaired or want to buy one? Call, WhatsApp, or email us to book your service today.</p>
+    <div class="contact-links">
+      <a class="btn-primary" href="tel:0556046300"><i class="fa-solid fa-phone"></i> Call 0556046300</a>
+      <a class="btn-primary" href="https://wa.me/233537638549" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a class="btn-secondary" href="mailto:cnknets@gmail.com"><i class="fa-solid fa-envelope"></i> Email Us</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
